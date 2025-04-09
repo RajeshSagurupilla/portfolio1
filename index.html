@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajesh Sagurupilla | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #0e0e0e;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    nav {
+      background: #1a1a1a;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 15px rgba(0, 255, 255, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #00ffff;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+    nav ul li {
+      margin-left: 1.5rem;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #bbb;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #00ffff;
+    }
+    header {
+      background: #1a1a1a;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #bbb;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .section {
+      margin-bottom: 3rem;
+      background: #1a1a1a;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+    }
+    .section h2 {
+      margin-bottom: 1rem;
+      color: #00ffff;
+      font-size: 1.8rem;
+    }
+    .about-image {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+    .about-image img {
+      border-radius: 10px;
+      width: 200px;
+      box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3);
+      transition: transform 0.3s ease;
+    }
+    .about-image img:hover {
+      transform: scale(1.05);
+    }
+    ul.skills {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    ul.skills li {
+      background: #292929;
+      padding: 1rem;
+      border-left: 4px solid #00ffff;
+      box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2);
+      border-radius: 5px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    ul.skills li:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0, 255, 255, 0.3);
+    }
+    strong{
+        text-decoration: underline;
+    }
+    .links a {
+      margin-right: 1rem;
+      color: #00ffff;
+      text-decoration: none;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+    .links a:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #00ffff;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Rajesh</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#links">Links</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Rajesh Sagurupilla</h1>
+    <p>Associate Engineer</p>
+  </header>
+
+  <div class="container">
+    <section id="about" class="section about">
+      <h2>About Me</h2>
+      <div class="about-image">
+        <img src="420A6585.JPG" alt="Rajesh Image" />
+        <p>
+          I am a skilled Python Developer with hands-on experience in building scalable and efficient RESTful APIs using Flask and FastAPI. I have a strong background in working with relational and non-relational databases such as MySQL, PostgreSQL, and MongoDB. My expertise extends to integrating AI models into real-world applications using tools and frameworks like LangChain, LlamaIndex, vector databases, and Retrieval-Augmented Generation (RAG). I specialize in backend and server-side development, ensuring high performance, reliability, and security in applications.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <h2>Technical Skills</h2>
+      <ul class="skills">
+        <li><strong>Languages:</strong> Python</li>
+        <li><strong>Frameworks:</strong> Flask, FastAPI, Django, DRF</li>
+        <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
+        <li><strong>API Tech:</strong> REST, JSON, JWT, OAuth</li>
+        <li><strong>AI/ML:</strong> LLMs, LangChain, LlamaIndex, RAG, Vector DBs</li>
+        <li><strong>DevOps & Tools:</strong> Git, Docker, GitHub, VS Code, Jupyter, Colab</li>
+        <li><strong>Web:</strong> HTML5, CSS3, JavaScript*, React.js*, Bootstrap</li>
+        <li><strong>Methodologies:</strong> Agile, Scrum, CI/CD (basic), Swagger</li>
+        <li><strong>Deployments:</strong> AWS*</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="section experience">
+      <h2>Experience</h2>
+      <p>2.4 years</p>
+    </section>
+
+    <section id="services" class="section services">
+      <h2>Services</h2>
+      <p>Web applications, AI integrations</p>
+    </section>
+
+    <section id="projects" class="section projects">
+      <h2>Projects</h2>
+      <p>AI Chatbot</p>
+    </section>
+
+    <section id="links" class="section links">
+      <h2>Links</h2>
+      <p>
+        <a href="#" target="_blank">GitHub</a>
+        <a href="#" target="_blank">LinkedIn</a>
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Rajesh Sagurupilla. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
